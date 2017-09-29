@@ -125,7 +125,7 @@ return [
         $mailer->Password = $c['config']->get('mail.password');
         $mailer->SMTPAuth = true;
         $mailer->SMTPSecure = false;
-        $mailer->FromName = $c['config']->get('mail.from.name');
+        $mailer->FromName = $c['config']->get('mail.fromname');
         $mailer->From = $c['config']->get('mail.from');
 
         $mailer->isHTML(true);
